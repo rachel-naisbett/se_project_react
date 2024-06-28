@@ -17,8 +17,11 @@
   margin-left: auto;
   border: none;
   cursor: pointer;
-  font-weight: 700;
   background-color: #f3f3f3;
+  font-family: "Cabinet Grotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
 }
 
 .header__logo {
@@ -27,9 +30,20 @@
 
 .header__userName {
   padding-right: 12px;
+  font-family: "Cabinet Grotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 25px;
+  font-size: 20px;
 }
 
 .header__avatar {
   height: 40px;
   width: 40px;
+}
+
+.header__date-location {
+  font-family: "Cabinet Grotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
 }

@@ -3,9 +3,11 @@
   position: relative;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .card__name {
+  font-family: "Cabinet Grotesk", Arial, Helvetica, sans-serif;
   background-color: white;
   color: #00000099;
   position: absolute;

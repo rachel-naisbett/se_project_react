@@ -1,5 +1,4 @@
-import "./ModalWithForm.css";
-import closeBTN from "../../assets/closeBTN.svg"; //;
+import "./ModalWithForm.css"; //;
 function ModalWithForm({
   children,
   buttonText,
@@ -17,9 +16,7 @@ function ModalWithForm({
           onClick={handleCloseClick}
           type="button"
           className="popup__close"
-        >
-          <img className="popup__close-image" src={closeBTN} />{" "}
-        </button>
+        ></button>
         <form className="popup__form">
           {children}
           <button type="submit" className="popup__submit-btn">

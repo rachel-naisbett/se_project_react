@@ -31,20 +31,18 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
-}
-
-.popup__close-image {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  right: 28px;
-  top: 20px;
-  background-size: contain;
+  padding: 0 0 24px 0;
 }
 
 .popup__close {
   cursor: pointer;
   border: none;
+  background: url("../../assets/closeBTN.svg") center no-repeat;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 28px;
+  top: 20px;
 }
 
 .popup__form {

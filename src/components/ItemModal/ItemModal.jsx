@@ -8,11 +8,9 @@ function ItemModal({ activeModal, card, handleCloseClick }) {
           onClick={handleCloseClick}
           type="button"
           className="popup__close"
-        >
-          <img className="popup__close-image" src={closeBTN} />{" "}
-        </button>
+        ></button>
         <img src={card.link} alt="" className="popup__image" />
-        <div className="popup__footer">
+        <div className="popup__footer-item">
           <h2 className="popup__caption">{card.name}</h2>
           <p className="popup__weather">Weather: {card.weather}</p>
         </div>
