@@ -9,18 +9,17 @@ import ItemModal from "../ItemModal/ItemModal";
 import { getWeather, filterWeatherData } from "../../utils/weatherAPI";
 import { coordinates, APIkey } from "../../utils/constants";
 function App() {
-  /*
   const [weatherData, setWeatherData] = useState({
     type: "",
     temp: { F: 999 },
     city: "",
   });
-  */
-  const [weatherData, setWeatherData] = useState({
-    type: "cold",
-    temp: { F: 34 },
-    city: "Berlin",
-  });
+
+  // const [weatherData, setWeatherData] = useState({
+  //   type: "cold",
+  //   temp: { F: 34 },
+  //   city: "Berlin",
+  // });
 
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
