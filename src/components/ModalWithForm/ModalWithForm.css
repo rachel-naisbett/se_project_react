@@ -11,7 +11,7 @@
   visibility: hidden;
 }
 
-.popup__opened {
+.popup_opened {
   visibility: visible;
 }
 

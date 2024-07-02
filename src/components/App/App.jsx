@@ -46,6 +46,11 @@ function App() {
       .catch(console.error);
   }, []);
 
+  const handleRadioChange = (index) => {
+    if (index === 0) {
+    }
+  };
+
   return (
     <div className="page">
       <div className="page__content">
@@ -58,6 +63,7 @@ function App() {
         buttonText="Add garment"
         activeModal={activeModal}
         handleCloseClick={closeActiveModal}
+        isOpen={activeModal === "add-garment"}
       >
         <label htmlFor="name" className="popup__label">
           Name{" "}
@@ -79,18 +85,49 @@ function App() {
         </label>
         <fieldset className="popup__radio-buttons">
           <legend className="popup__legend">Select the weather type:</legend>
-          <label htmlFor="hot" className="popup__label popup__label-radio">
-            <input id="hot" type="radio" className="popup__radio-btn-input" />
+          {["Hot", "Warm", "Cold"].map((item, index) => {
+            return (
+              <label className="popup__label popup__label-radio">
+                <input
+                  type="radio"
+                  className="popup__radio-btn-input"
+                  name="temperature-type"
+                  onChange={() => handleRadioChange(index)}
+                />
+                {item}
+              </label>
+            );
+          })}
+          {/* <label htmlFor="hot" className="popup__label popup__label-radio">
+            <input
+              id="hot"
+              type="radio"
+              className="popup__radio-btn-input"
+              name="temperature-type"
+              onChange={handleRadioChange}
+            />
             Hot
           </label>
           <label htmlFor="warm" className="popup__label popup__label-radio">
-            <input id="warm" type="radio" className="popup__radio-btn-input" />
+            <input
+              id="warm"
+              type="radio"
+              className="popup__radio-btn-input"
+              name="temperature-type"
+              onChange={handleRadioChange}
+            />
             Warm
           </label>
           <label htmlFor="cold" className="popup__label popup__label-radio">
-            <input id="cold" type="radio" className="popup__radio-btn-input" />
+            <input
+              id="cold"
+              type="radio"
+              className="popup__radio-btn-input"
+              name="temperature-type"
+              onChange={handleRadioChange}
+            />
             Cold
-          </label>
+          </label> */}
         </fieldset>
       </ModalWithForm>
       <ItemModal

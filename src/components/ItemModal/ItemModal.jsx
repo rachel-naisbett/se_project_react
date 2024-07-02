@@ -2,7 +2,7 @@ import "./ItemModal.css";
 import closeBTN from "../../assets/closeBTN.svg";
 function ItemModal({ activeModal, card, handleCloseClick }) {
   return (
-    <div className={`popup ${activeModal === "preview" && "popup__opened"}`}>
+    <div className={`popup ${activeModal === "preview" && "popup_opened"}`}>
       <div className="popup__content popup__content-type-image">
         <button
           onClick={handleCloseClick}

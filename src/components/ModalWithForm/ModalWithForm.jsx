@@ -5,11 +5,10 @@ function ModalWithForm({
   title,
   activeModal,
   handleCloseClick,
+  isOpen,
 }) {
   return (
-    <div
-      className={`popup ${activeModal === "add-garment" && "popup__opened"}`}
-    >
+    <div className={`popup ${isOpen && "popup_opened"}`}>
       <div className="popup__content">
         <h2 className="popup__title">{title}</h2>
         <button
