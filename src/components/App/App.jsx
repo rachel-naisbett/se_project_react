@@ -87,7 +87,7 @@ function App() {
           <legend className="popup__legend">Select the weather type:</legend>
           {["Hot", "Warm", "Cold"].map((item, index) => {
             return (
-              <label className="popup__label popup__label-radio">
+              <label key={item} className="popup__label popup__label-radio">
                 <input
                   type="radio"
                   className="popup__radio-btn-input"

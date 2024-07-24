@@ -1,10 +1,7 @@
 import "./ItemModal.css";
 function ItemModal({ activeModal, card, handleCloseClick }) {
   return (
-    <div
-      key={card}
-      className={`popup ${activeModal === "preview" && "popup_opened"}`}
-    >
+    <div className={`popup ${activeModal === "preview" && "popup_opened"}`}>
       <div className="popup__content popup__content-type-image">
         <button
           onClick={handleCloseClick}
